@@ -28,7 +28,7 @@ function displaySong(num){
 	var lyrics, songTitle = '<h1>' + indice[num - 1].title + '</h1>';
 	lyrics = '<p>' + indice[num - 1].text + '</p>';
 	document.querySelector('.title').innerHTML = songTitle;
-	document.querySelector('.song').innerHTML = lyrics;
+	document.querySelector('.cont').innerHTML = lyrics;
 }
 
 var count = 0; // keeps count of the clicks

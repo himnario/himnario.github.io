@@ -33,22 +33,25 @@ body {
 }
 
 .nav{
-	background: #000;
-	width: 70px;
-	height: 70px;
+	background: url('../img/nav-bars.png');
+	background-size: cover;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 10px;
+	right: 15px;
 }
 
-.main {
+.wrap {
 	width: 95%;
 	margin: 70px auto;
-	padding: 10px 0;
+	padding: 0.1em 0;
 	background: #FDF3E7;
 }
 
-.song, .index {
+
+.cont, .index {
 	width: 95%;
 	margin: 0 auto;
 }
