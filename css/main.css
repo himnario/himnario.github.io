@@ -34,8 +34,8 @@ body {
 
 .nav{
 	background: #000;
-	width: 30px;
-	height: 30px;
+	width: 70px;
+	height: 70px;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -43,8 +43,8 @@ body {
 
 .main {
 	width: 95%;
-	margin: 70px auto 20px;
-	padding: 10px;
+	margin: 70px auto;
+	padding: 10px 0;
 	background: #FDF3E7;
 }
 
