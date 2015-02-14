@@ -1,0 +1,67 @@
+
+
+/*********************************
+COLORS
+1. Orange: #FF6138 ---> Main Color
+2. Yellowish: #FFFF9D
+3. lightgreen: #BEEB9F
+4. darkergreen: #79BD8F
+5. green: #00A388
+*/
+
+body {
+	margin: 0;
+	background: #C63D0F;
+	color:#3B3738;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	box-sizing: border-box;
+	-web-kit-box-sizing: border-box;
+}
+
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #FFF;
+}
+
+.header h1 {
+	width: 95%;
+	margin: 0.7em auto;
+	font-size: 1.5em;
+}
+
+.nav{
+	background: #000;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.main {
+	width: 95%;
+	margin: 70px auto 20px;
+	padding: 10px;
+	background: #FDF3E7;
+}
+
+.song, .index {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.nav-button {
+	width: 49%;
+	height: 60px;
+	position: inherit;
+	bottom: 0;
+	border:none;
+	background: #7E8F7C;
+}
