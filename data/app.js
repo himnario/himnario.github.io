@@ -3,7 +3,7 @@ var song = []; // stores an id for every song.
 var songId = "";
 
 // this functions loads all the songs available
-function showData(){
+function showData(loc){
 	var id, list = '<ol>';
 	for(var i = 0; i < indice.length; i++){ // get data from array
 		id = 'song' + (i + 1);
@@ -11,7 +11,7 @@ function showData(){
 		list += '<li id=' + id + ' onclick="loadPageSong(id)"><a href="#" >' + indice[i].title + '</li>';	
 	}
 	list += '</a></ol>';
-	document.querySelector('.index').innerHTML = list;
+	document.querySelector(loc).innerHTML = list;
 }
 
 function getSong(id){
@@ -65,4 +65,23 @@ function loadPageSong(id){
 	xhr.send();
 }
 
+function showMenu(){
+	var menu = document.querySelector('.menu');
+	menu.className = "menu";
+}
+
+function showIndice(){
+
+	indice.sort(function(a, b){
+		var titleA = a.title.toLowerCase(), titleB = b.title.toLowerCase();
+		if (titleA < titleB) return -1;
+		if (titleA > titleB) return 1;
+		return 0;
+	});
+	showData('.menuIndex');
+}
+
+function hideMenu(){
+	var menu = document.querySelector('.menu').className += ' hide';
+}
 

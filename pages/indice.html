@@ -9,7 +9,14 @@
 	<div>
 		<div class="header">
 			
-			<div class="nav"></div>	
+			<div class="nav" onclick="showMenu()"></div>	
+			<div class="menu hide">
+				<ul class="main-m">
+					<a href="../index.html"><li>Inicio</li></a>
+					<a href="#"><li onclick="showIndice()">Indice</li></a>
+				</ul>
+				<div class="menuIndex" onclick="hideMenu()"></div>
+			</div>
 		</div>
 		<div class="load"></div>
 		<div class="wrap">
@@ -23,7 +30,7 @@
 	<script src="../data/songs.js"></script>
 	<script src="../data/app.js"></script>	
 	<script>
-		window.onload = showData();
+		window.onload = showData('.index');
 	</script>
 </body>
 </html>
