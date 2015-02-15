@@ -3,19 +3,16 @@
 var indice = [
 	{
 		title: "La Senda Del Justo", 
-		link: "../pages/song1.html",
 		text: "La senda del justo es cual luz de aurora <br> que va en aumento hasta que apunta el cenit <br> Hasta que el día esclarezca e ilumine nuestro ser <br> y el lucero de la mañana nazca en nuestro corazón <br><br> <span class='color'>Coro</span> <br><br> Bendita senda, senda que el Señor trazó <br> Llena de gozo paz y felicidad. <br><br>Esta bendita senda jamás la vio ave <br> ni ojo de buitre jamás la miro <br> de raíz trastorno los montes y  los ríos en su nacer <br> sus ojos vieron lo preciado y lo escondido sacó a la luz <br><br>Jesús el cordero descubrió esta senda <br> cuando en el calvario su espíritu dio <br> el velo del templo, rasgose en Jerusalén <br> Entraron todo los gentiles cual sacerdote a ministrar. <br> "
 	}, 
 
 	{
 		title: "El Fundamento Eterno",
-		link: "../pages/song2.html",
 		text: "Jesús el fundamento eterno  <br> Que viene con su grande poder <br> Servirte esos son mis deseos <br> Ayúdame mi Cristo para poder vencer <br><br> Mi alma sedienta esta de verte <br> Mi alma espera en Jehová <br> Mi alma su poder la sustenta <br> Ayúdame mi Cristo hasta la eternidad <br><br> Jesús que linda es tu palabra <br> Dulce mas dulce que la miel <br> Nos llena el corazón de vida <br> Ayúdanos mi Cristo es para serte fiel <br><br> Ahora me quedo meditando <br> Lo mucho que ama Jesús <br> Que por todo el mundo dio su vida <br> Estando en tinieblas nos traslado a su luz "
 	}, 
 
 	{
 		title: "Oh Que Gozo",
-		link: "../pages/song3.html",
 		text: "Oh que gozo el que siento en mi alma<br> Oh que gozo es un gozo incomparable<br> Oh que gozo e que siento en mi alma<br> Porque Cristo me ha salvado de la muerte<br><br> Ahora tomo con amor las armaduras<br> Las armaduras que mi Cristo me ha dejado<br> Que es temor, amor y caridad<br> Santidad, y templanza, y tolerancia<br><br> El camino es un camino muy sufrido<br> Y muy pocos los que quieren caminar<br> Pero si te conviertes con amor<br> Ningún viento los podrá arrebatar.<br><br> Todo árbol que mi padre lo ha plantado<br> Dará frutos apacibles de justicia<br> Pues a mi juicios son verdad y rectitud<br> No cualquiera los tendrá que resistir.<br><br> Pues ya poco va quedando para el fin<br> Y yo quiero esta iglesia ordenada<br> Que por luz yo la he puesto en las tinieblas<br> Como antorcha entre mucha oscuridad<br><br> Muchos pueblos se profesan ser piadosos <br> Y desechan la enseñanza de mi padre<br> Yo no vine a enseñarles en holganza <br> Sino vine a darles enseñanza con templanza<br><br> Mis caminos son muy rectos con justicia <br> Y honestos para ver la indiferencia <br> Este pueblo es conocido entre los pueblos <br> Y no hay pueblo que los pueda comparar<br><br> Y el primero de todos los ministros <br> Es Jesús el rey de Israel<br> Y los que siguen por cabezas de su pueblo<br> Que no dejen de templar siempre el orden.<br><br> Apacienta a mi pueblo con amor<br> Exhortando con espíritu de Dios <br> Que yo soy el que examino los corazones <br> Y el fruto que me da de cada uno. "
 	}, 
 
