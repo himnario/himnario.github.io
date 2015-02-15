@@ -52,7 +52,6 @@ function back(){
 
 function loadPageSong(id){
 	count = song.indexOf(id) + 1;
-	alert(count);
 	var rm = document.querySelector('.wrap');
 	rm.parentNode.removeChild(rm);
 	var xhr = new XMLHttpRequest();
