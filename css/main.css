@@ -26,10 +26,10 @@ body {
 	color: #FFF;
 }
 
-.header h1 {
+.cont h1 {
 	width: 95%;
 	margin: 0.7em auto;
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 
 .nav{
@@ -58,13 +58,17 @@ body {
 
 .buttons {
 	text-align: center;
+	padding: 1em 0;
 }
 
 .nav-button {
-	width: 49%;
-	height: 60px;
-	position: inherit;
-	bottom: 0;
+	width: 40%;
+	font-size: 1em;
+	font-weight: 700;
+	border-radius: 5px;
+	height: 40px;
 	border:none;
-	background: #7E8F7C;
+	background: #FF6138;
 }
+
+
