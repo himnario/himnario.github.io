@@ -51,7 +51,7 @@ body {
 }
 
 
-.cont, .index {
+.cont, .index, .load {
 	width: 95%;
 	margin: 0 auto;
 }

@@ -8,7 +8,7 @@ function showData(){
 	for(var i = 0; i < indice.length; i++){ // get data from array
 		id = 'song' + (i + 1);
 		song.push(id);
-		list += '<li id=' + id + ' onclick="getSong(id)"><a href="#" >' + indice[i].title + '</li>';	
+		list += '<li id=' + id + ' onclick="loadPageSong(id)"><a href="#" >' + indice[i].title + '</li>';	
 	}
 	list += '</a></ol>';
 	document.querySelector('.index').innerHTML = list;
@@ -38,14 +38,32 @@ function decrementCount(){
 	if (count < 0) window.location.href = '../pages/indice.html' ;
 }
 
-document.querySelector("#next").addEventListener('click',function(){
+function next(){
 	incrementCount();
 	displaySong(count);
 	window.scrollTo(0, -500);
-});
+}
 
-document.querySelector("#back").addEventListener('click',function(){
+function back(){
 	decrementCount();
 	displaySong(count);
-	window.scrollTo(0, -500);
-});
+	window.scrollTo(0, -500);	
+}
+
+function loadPageSong(id){
+	count = song.indexOf(id) + 1;
+	alert(count);
+	var rm = document.querySelector('.wrap');
+	rm.parentNode.removeChild(rm);
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', '../pages/song.html');
+	xhr.onreadystatechange = function(){
+		if (xhr.readyState === 4 && xhr.status === 200){
+			document.querySelector('.load').innerHTML = xhr.responseText;
+			displaySong(count);
+		}
+	}
+	xhr.send();
+}
+
+
