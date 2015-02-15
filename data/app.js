@@ -31,7 +31,7 @@ function displaySong(num){
 	document.querySelector('.cont').innerHTML += lyrics;
 }
 
-var count = 0; // keeps count of the clicks
+var count = 1; // keeps count of the clicks
 
 function incrementCount(){
 	count++; // if the next button is click the count variable increments by 1
@@ -45,9 +45,11 @@ function decrementCount(){
 document.querySelector("#next").addEventListener('click',function(){
 	incrementCount();
 	displaySong(count);
+	window.scrollTo(0, -500);
 });
 
 document.querySelector("#back").addEventListener('click',function(){
 	decrementCount();
 	displaySong(count);
+	window.scrollTo(0, -500);
 });
