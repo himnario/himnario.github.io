@@ -167,7 +167,7 @@ var indice = [
 	
 	{
 		title: "Siervo Mio",
-		text: "Por un amor que Cristo nos ha dado<br> Por un amor que Cristo se entregó<br> Por un amor mi Cristo fue llevado<br> En el calvario su espíritu entrego<br><br> <span class='coro'>Coro</span><br><br> Amén, amén, amén aleluya<br> El rey de reyes a las puertas está<br> El que tuviere las vestiduras blancas<br> Será llevado al reino celestial<br><br> En apocalipsis nos dice su palabra<br> Que está un libro sellado allá en el cielo<br> En ese libro grabado está tu nombre<br> Serán llamados en llano de Josafat<br><br> Cuando el cordero abrió uno de los sellos<br> Oí una voz del cielo que decía<br> Le será dada una corona de justicia<br> A todo aquel que venciera hasta el fin<br><br> "
+		text: "Siervo mío se valiente esforzate a trabajar<br> Si has creído en un Dios vivo<br> Es el que nos va ayudar<br> Con templanza y rectitud a las almas doctrinad<br> <br> Si recibes la palabra a tu Dios gracias darás<br> Si has guardado tu vestido no lo vayas a manchar<br> Porque manchas y arrugas<br> Al cielo no entrarán<br> <br> Siervo mío se valiente no pienses en desmayar<br> Si has creído en un Dios vivo, es el que nos va ayudar<br> Porque el reino es de valientes <br> Los cobardes no entraran<br> <br> El que toma la mansera y vuelve a ver atrás<br> Este no estaba acto para el reino celestial<br> Hoy le espera un fuego ardiente<br> En el lago infernal <br> "
 	}, 
 	
 	{
