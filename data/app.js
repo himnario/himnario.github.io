@@ -1,7 +1,3 @@
-/*
- * @author: Israel Montano
- * 
- */
 
 var song = []; // stores an id for every song.
 var songId = "";
@@ -20,7 +16,7 @@ function showData(){
 
 function getSong(id){
 	songId = id;
-	window.open("../pages/song.html");
+	window.location.href = "../pages/song.html";
 }
 
 // displays song 
@@ -39,7 +35,7 @@ function incrementCount(){
 
 function decrementCount(){
 	count--; // if the back button is clicked the count variable decrements by 1
-	if (count < 0) count = 1 ;
+	if (count < 0) window.location.href = '../pages/indice.html' ;
 }
 
 document.querySelector("#next").addEventListener('click',function(){
