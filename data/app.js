@@ -96,6 +96,7 @@ function hideMenu(){
 	document.getElementsByTagName('body')[0].style.marginLeft = "0";
 	document.querySelector('.menu').className += ' hide';
 	document.querySelector('.wrap').style.marginLeft = "auto";
+	document.querySelector('.wrap').style.fontSize = "1em";
 	document.querySelector('.nav').id = "";
 	document.querySelector('.nav').style.backgroundImage = "url('../img/nav-bars.png')";
 }
