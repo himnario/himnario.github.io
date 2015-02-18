@@ -1,3 +1,8 @@
+/*
+ * Chino Montano
+ * 02/12/14
+ * This program handles the user interaction with the page
+ */
 
 var song = []; // stores an id for every song.
 var songId = "";
@@ -14,17 +19,13 @@ function showData(loc){
 	document.querySelector(loc).innerHTML = list;
 }
 
-function getSong(id){
-	songId = id;
-	window.location.href = "../pages/song.html";
-}
-
 // displays song 
 function displaySong(num){
 	var lyrics, songTitle = '<h1>' + indice[num - 1].title + '</h1>';
 	lyrics = '<p>' + indice[num - 1].text + '</p>';
 	document.querySelector('.cont').innerHTML = songTitle;
 	document.querySelector('.cont').innerHTML += lyrics;
+	hideMenu();
 }
 
 var count = 1; // keeps count of the clicks
@@ -38,18 +39,21 @@ function decrementCount(){
 	if (count < 0) window.location.href = '../pages/indice.html' ;
 }
 
+// when the next button is clicked it redirects to it and scrolls up
 function next(){
 	incrementCount();
 	displaySong(count);
 	window.scrollTo(0, -500);
 }
 
+// when the back button is clicked it redirects to it and scrolls up
 function back(){
 	decrementCount();
 	displaySong(count);
 	window.scrollTo(0, -500);	
 }
 
+// this is an ajax funtion that loads the song page to the indice page
 function loadPageSong(id){
 	count = song.indexOf(id) + 1;
 	var rm = document.querySelector('.wrap');
@@ -65,13 +69,19 @@ function loadPageSong(id){
 	xhr.send();
 }
 
+
+// this function is accessed when the user clicks the bars to show the menu
 function showMenu(){
-	var menu = document.querySelector('.menu');
-	menu.className = "menu";
+	document.getElementsByTagName('body')[0].style.marginLeft = "-280px";
+	document.querySelector('.wrap').style.marginLeft = "-280px";
+	document.querySelector('.nav').style.marginLeft = "-280px";
+	document.querySelector('.nav').id = "smaller-img";
+	document.querySelector('.nav').style.backgroundImage = "url('../img/nav-x.png')";
+	document.querySelector('.menu').className = "menu";
 }
 
+// when the indice button is clicked in the menu it displays all the songs in alphabetical order.
 function showIndice(){
-
 	indice.sort(function(a, b){
 		var titleA = a.title.toLowerCase(), titleB = b.title.toLowerCase();
 		if (titleA < titleB) return -1;
@@ -81,7 +91,23 @@ function showIndice(){
 	showData('.menuIndex');
 }
 
+// this functions hides the menu.
 function hideMenu(){
-	var menu = document.querySelector('.menu').className += ' hide';
+	document.getElementsByTagName('body')[0].style.marginLeft = "0";
+	document.querySelector('.menu').className += ' hide';
+	document.querySelector('.wrap').style.marginLeft = "auto";
+	document.querySelector('.nav').id = "";
+	document.querySelector('.nav').style.backgroundImage = "url('../img/nav-bars.png')";
 }
+
+
+var showing = 0;
+document.querySelector('.nav').addEventListener('click', function(){
+	showing += 1;
+	if (showing % 2 !== 0) {
+		showMenu();
+	} else {
+		hideMenu();
+	}
+});
 

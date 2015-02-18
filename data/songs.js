@@ -1,5 +1,8 @@
-
-// Aqui se guardaran los himnos
+/*
+ * Chino Montano
+ * 02/12/14
+ * This file contains the songs 
+ */
 var indice = [
 	{
 		title: "La Senda Del Justo", 

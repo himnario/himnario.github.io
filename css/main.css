@@ -1,14 +1,5 @@
 
 
-/*********************************
-COLORS
-1. Orange: # ---> Main Color
-2. Yellowish: #FFFF9D
-3. lightgreen: #BEEB9F
-4. darkergreen: #79BD8F
-5. green: #00A388
-*/
-
 body {
 	margin: 0;
 	background: #C63D0F;
@@ -16,6 +7,11 @@ body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	box-sizing: border-box;
 	-web-kit-box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #C63D0F;
 }
 
 .hide {
@@ -32,24 +28,29 @@ body {
 
 .menu {
 	position: absolute;
-	width: 100%;
-	background: rgba(0,0,0,0.7);
+	width: 300px;
+	background: #FDF3E7;
+	opacity: 0.7;
+	top: 70px;
+	right: 1%;
 }
 
 .menu ul {
-	margin-top: -10px;
-	list-style-type: none;
-	background: rgba(255,255,255,0.9);
+	list-style: none;
+	margin: 0 auto;
+}
+
+.menu ul li {
+	background: #000;
+	margin-left: -40px;
+	padding: 10px 0;
 	text-align: center;
-	padding: 20px 0;
+	font-size: 1.2em;
 }
 
-
-.menu ul a{
-	text-decoration: none; 
-	font-weight: 700;
+.menu ul li a{
+	color: #fff;
 }
-
 
 .cont h1 {
 	width: 95%;
@@ -68,6 +69,12 @@ body {
 	right: 15px;
 }
 
+#smaller-img {
+	width: 35px;
+	height: 35px;
+	top: 20px;
+}
+
 .wrap {
 	width: 95%;
 	margin: 70px auto;
@@ -83,12 +90,13 @@ body {
 
 .menuIndex a{
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
 .menuIndex ol {
 	list-style-type: none;
 }
+
 
 .buttons {
 	text-align: center;
@@ -103,6 +111,7 @@ body {
 	height: 40px;
 	border:none;
 	background: #FF6138;
+	color: #fff;
 }
 
 
